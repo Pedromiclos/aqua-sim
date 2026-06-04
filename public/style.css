@@ -369,3 +369,87 @@ footer{
         font-size:42px;
     }
 }
+/* RESPONSIVO MOBILE */
+
+@media (max-width: 768px){
+
+    .app{
+        flex-direction:column;
+        padding:10px;
+    }
+
+    .sidebar{
+        width:100%;
+        margin-bottom:15px;
+    }
+
+    .config{
+        display:none;
+    }
+
+    .steps{
+        grid-template-columns:1fr;
+    }
+
+    .hero-card{
+        flex-direction:column;
+        padding:25px;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:32px;
+    }
+
+    .hero-text p{
+        font-size:15px;
+    }
+
+    .hero-image{
+        width:100%;
+        margin-top:20px;
+    }
+
+    .house{
+        width:250px;
+        height:auto;
+    }
+
+    .grid-form{
+        grid-template-columns:1fr;
+    }
+
+    .cards-resultado{
+        grid-template-columns:1fr;
+    }
+
+    .info-card{
+        width:100%;
+    }
+
+    .barras{
+        gap:8px;
+        overflow-x:auto;
+        padding-bottom:10px;
+    }
+
+    .barra{
+        width:35px;
+    }
+
+    .acoes{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .acoes button,
+    .voltar,
+    .botao{
+        width:100%;
+        text-align:center;
+    }
+
+    .main{
+        width:100%;
+    }
+}
