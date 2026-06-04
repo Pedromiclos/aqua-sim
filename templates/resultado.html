@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado - AquaSim</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <h2>💧 AquaSim</h2>
+        <p>Simulador de Consumo<br>de Água Residencial</p>
+
+        <a href="/">🏠 Início</a>
+        <a href="/simulacao">☑ Simulações</a>
+        <a href="#">🛡 Dicas de Economia</a>
+        <a href="#">📄 Relatórios</a>
+
+        <div class="config">⚙ Configurações</div>
+    </aside>
+
+    <main class="main">
+
+        <div class="steps">
+            <div><span>1</span><strong>Boas-vindas</strong></div>
+            <div><span>2</span><strong>Coleta de informações</strong></div>
+            <div><span>3</span><strong>Resultado</strong></div>
+        </div>
+
+        <section class="resultado-card">
+
+            <h1>Resultado da sua simulação</h1>
+            <p class="sub">
+                Veja seu consumo estimado e descubra oportunidades de economia.
+            </p>
+
+            <div class="cards-resultado">
+
+                <div class="info-card">
+                    <h4>💧 Consumo estimado</h4>
+                    <h2>{{ consumo }} L</h2>
+                    <small>Litros por mês</small>
+                </div>
+
+                <div class="info-card">
+                    <h4>👥 Consumo por pessoa</h4>
+                    <h2>{{ por_pessoa }} L</h2>
+                    <small>Por pessoa</small>
+                </div>
+
+                <div class="info-card">
+                    <h4>🎯 Economia possível</h4>
+                    <h2>{{ economia }} L</h2>
+                    <small>Redução estimada</small>
+                </div>
+
+            </div>
+
+            <div class="grafico">
+                <h3>Seu consumo nos últimos meses</h3>
+
+                <div class="barras">
+                    <div class="barra" style="height:120px"></div>
+                    <div class="barra" style="height:160px"></div>
+                    <div class="barra" style="height:180px"></div>
+                    <div class="barra" style="height:170px"></div>
+                    <div class="barra" style="height:130px"></div>
+                    <div class="barra" style="height:190px"></div>
+                </div>
+
+                <div class="meses">
+                    <span>Dez</span>
+                    <span>Jan</span>
+                    <span>Fev</span>
+                    <span>Mar</span>
+                    <span>Abr</span>
+                    <span>Mai</span>
+                </div>
+            </div>
+
+            <div class="recomendacao">
+                <h3>💡 Recomendação principal</h3>
+                <p>
+                    Banhos mais curtos podem gerar uma economia significativa de água.
+                </p>
+            </div>
+
+            <div class="acoes">
+                <a href="/simulacao" class="voltar">
+                    Nova Simulação
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
