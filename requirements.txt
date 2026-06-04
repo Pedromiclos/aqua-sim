@@ -1,1 +1,4 @@
 Flask
+{
+  "outputDirectory": "public"
+}
