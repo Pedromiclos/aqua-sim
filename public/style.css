@@ -453,3 +453,163 @@ footer{
         width:100%;
     }
 }
+@media (max-width: 768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .app{
+        flex-direction:column;
+        padding:12px;
+        gap:14px;
+    }
+
+    .sidebar{
+        width:100%;
+        padding:18px;
+        border-radius:16px;
+    }
+
+    .sidebar h2{
+        font-size:22px;
+    }
+
+    .sidebar p,
+    .config{
+        display:none;
+    }
+
+    .sidebar a{
+        display:inline-block;
+        width:48%;
+        font-size:13px;
+        padding:11px;
+        margin:4px 1%;
+        text-align:center;
+    }
+
+    .main{
+        width:100%;
+    }
+
+    .steps{
+        grid-template-columns:1fr;
+        gap:10px;
+        margin-bottom:14px;
+    }
+
+    .steps div{
+        padding:12px;
+    }
+
+    .hero-card,
+    .form-card,
+    .resultado-card{
+        padding:22px;
+        border-radius:18px;
+    }
+
+    .hero-card{
+        flex-direction:column;
+        text-align:center;
+        min-height:auto;
+    }
+
+    .hero-text h1{
+        font-size:34px;
+        line-height:1.1;
+    }
+
+    .hero-text p,
+    .sub{
+        font-size:14px;
+    }
+
+    .botao{
+        width:100%;
+        padding:14px;
+    }
+
+    .hero-image{
+        display:none;
+    }
+
+    .grid-form{
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+
+    .acoes{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .acoes button,
+    .voltar{
+        width:100%;
+        text-align:center;
+    }
+
+    .cards-resultado{
+        grid-template-columns:1fr;
+    }
+
+    .info-card h2{
+        font-size:28px;
+    }
+
+    .grafico{
+        overflow-x:auto;
+    }
+
+    .barras{
+        min-width:420px;
+    }
+
+    .meses{
+        min-width:420px;
+        justify-content:space-between;
+    }
+}
+@media (max-width: 480px){
+
+    .hero-text h1{
+        font-size:28px !important;
+    }
+
+    .hero-card,
+    .form-card,
+    .resultado-card{
+        padding:15px !important;
+    }
+
+    .sidebar a{
+        width:100% !important;
+        margin:4px 0 !important;
+    }
+
+    .grid-form{
+        grid-template-columns:1fr !important;
+    }
+
+    input,
+    select,
+    button,
+    .botao{
+        width:100% !important;
+    }
+
+    .steps span{
+        width:30px;
+        height:30px;
+    }
+
+    .info-card{
+        padding:15px;
+    }
+
+    .info-card h2{
+        font-size:22px;
+    }
+}
